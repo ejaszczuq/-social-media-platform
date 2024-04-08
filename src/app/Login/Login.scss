@@ -1,4 +1,14 @@
 @use 'src/scss/global.scss' as *;
 
-// .login {
-// }
+html {
+   background-image: radial-gradient(
+      circle at 50% 50%,
+      #f7c9c1 0,
+      #f6c3bd 16.67%,
+      #f4bcb9 33.33%,
+      #f2b5b5 50%,
+      #f0aeb2 66.67%,
+      #eda7b0 83.33%,
+      #eba1ae 100%
+   );
+}
