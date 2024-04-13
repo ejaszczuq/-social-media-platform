@@ -17,7 +17,7 @@
 
    h3 {
       font-size: 20px;
-      color: #ff2b59;
+      color: $pink-1;
       margin-bottom: 28px;
       margin-top: 4px;
       font-weight: 400;
@@ -36,8 +36,8 @@
       input {
          height: 42px;
          width: 278px;
-         background-color: rgba(#d9d9d9, 0.38);
-         border: 0.7px solid #cdcdcd;
+         background-color: rgba($grey-3, 0.38);
+         border: 0.7px solid $grey-4;
          border-radius: 8px;
          margin-top: 6px;
          padding-left: 12px;
@@ -49,7 +49,7 @@
    }
 
    button {
-      background-color: #ff2b59;
+      background-color: $pink-1;
       height: 46px;
       width: 290px;
       border-radius: 8px;

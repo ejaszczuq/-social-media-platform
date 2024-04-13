@@ -1,10 +1,14 @@
 import React from 'react';
+
 import './Registration.scss';
+
+import RegistrationForm from '../../components/RegistrationForm/RegistrationForm';
+
 
 const RegistrationPage = () => {
    return (
       <div className="registration">
-         <h1>Registration Page</h1>
+         <RegistrationForm />
       </div>
    );
 };

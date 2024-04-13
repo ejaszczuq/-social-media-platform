@@ -1,12 +1,12 @@
 import React from 'react';
 
-import './LogInBox.scss';
+import './LogInForm.scss';
 
-interface ILogInBox {}
+interface ILogInForm {}
 
-const LogInBox: React.FC<ILogInBox> = () => {
+const LogInForm: React.FC<ILogInForm> = () => {
    return (
-      <div className="log-in-box">
+      <div className="log-in-form">
          <h1>Log in</h1>
          <h3>to start creating</h3>
          <div className="inputs">
@@ -29,9 +29,9 @@ const LogInBox: React.FC<ILogInBox> = () => {
                viewBox="0 0 24 24"
                fill="none"
                stroke="currentColor"
-               stroke-width="2"
-               stroke-linecap="round"
-               stroke-linejoin="round"
+               strokeWidth="2"
+               strokeLinecap="round"
+               strokeLinejoin="round"
             >
                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                <path d="M5 12l14 0" />
@@ -43,4 +43,4 @@ const LogInBox: React.FC<ILogInBox> = () => {
    );
 };
 
-export default LogInBox;
+export default LogInForm;
