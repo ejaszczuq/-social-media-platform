@@ -1,1 +1,8 @@
 @use 'src/scss/global.scss' as *;
+
+html {
+   background-size: cover;
+
+   @include flex-center;
+   padding-top: 5%;
+}
