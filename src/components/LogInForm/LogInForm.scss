@@ -28,41 +28,70 @@
       color: $grey-2;
    }
 
-   .inputs {
-      display: flex;
-      flex-direction: column;
-      gap: 25px;
+   .log-in-form {
+      padding-right: 25px;
 
-      input {
-         height: 42px;
-         width: 278px;
-         background-color: rgba($grey-3, 0.38);
-         border: 0.7px solid $grey-4;
+      .inputs {
+         @include flex-center;
+         display: flex;
+         flex-direction: column;
+         gap: 20px;
+
+         label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: $grey-3;
+            border-radius: 8px;
+            position: relative;
+            border: 0.7px solid $grey-4;
+            padding-left: 40px;
+            font-size: 14px;
+
+            img {
+               position: absolute;
+               top: 25%;
+               left: 12px;
+            }
+
+            input {
+               flex-grow: 1;
+               border: none;
+               background-color: $white-1;
+               outline: none;
+               width: 140px;
+               height: 44px;
+               border-top-right-radius: 8px;
+               border-bottom-right-radius: 8px;
+               padding-left: 28px;
+
+               &::placeholder {
+                  color: $grey-4;
+                  font-size: 15px;
+               }
+            }
+         }
+      }
+
+      button {
+         background-color: $pink-1;
+         height: 46px;
+         width: 290px;
          border-radius: 8px;
-         margin-top: 6px;
-         padding-left: 12px;
+         border: 0;
+         font-size: 18px;
+         font-weight: bold;
+         color: $white-1;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         position: relative;
       }
 
-      label {
-         color: $grey-1;
-      }
-   }
-
-   button {
-      background-color: $pink-1;
-      height: 46px;
-      width: 290px;
-      border-radius: 8px;
-      border: 0;
-      font-size: 18px;
-      font-weight: bold;
-      color: $white-1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      svg {
-         margin-left: 10px;
+      button,
+      label,
+      p {
+         cursor: pointer;
       }
    }
 }
